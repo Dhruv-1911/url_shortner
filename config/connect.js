@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const connect_db =mongoose.connect('mongodb+srv://dhruvk:P5kB99LoKkF88inU@cluster0.ptx4wli.mongodb.net/shortUrl',{ useNewUrlParser: true,})
+const connect_db =mongoose.connect('mongodb://localhost:27017/short_url',{ useNewUrlParser: true,})
     .then(() => {
         console.log("Connect to Databse..")
     })
